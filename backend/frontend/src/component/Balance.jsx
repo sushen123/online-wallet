@@ -5,7 +5,7 @@ export function Balance () {
     const [balance, setBalance] = useState("");
     const navigate = useNavigate();
 
-    fetch("http://localhost:3000/api/v1/account/balance", {
+    fetch(`${window.location.origin}/api/v1/account/balance`, {
         method: "GET",
         headers: {
             'Authorization' : "Bearer " + localStorage.getItem("token")

@@ -33,7 +33,7 @@ export function Send() {
         }} />
         <br />
         <button onClick={async() => {
-            const response = await fetch("http://localhost:3000/api/v1/account/transfer", {
+            const response = await fetch(`${window.location.origin}/api/v1/account/transfer`, {
                 method: "POST",
                 headers: {
                      'Content-Type': 'application/json',

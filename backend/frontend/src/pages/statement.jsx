@@ -8,7 +8,7 @@ export function Statement() {
 
 
      useEffect(() => {
-        fetch("http://localhost:3000/api/v1/account/statement", {
+        fetch(`${window.location.origin}/api/v1/account/statement`, {
             method: "GET" ,
             headers: {
              'Content-Type': 'application/json',
