@@ -5,7 +5,7 @@ export function Appbar() {
     const navigate = useNavigate();
     const [name, setName] = useState("")
 
-    fetch(`${window.location.origin}/api/v1/user/name`, {
+    fetch(`http://localhost:3000/api/v1/user/name`, {
         method: "GET",
         headers: {
             'Authorization' : "Bearer " + localStorage.getItem("token")

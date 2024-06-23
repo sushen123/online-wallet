@@ -4,6 +4,7 @@ const path = require("path")
 const mainRouter = require('./routes/index')
 const cors = require('cors')
 
+
 app.use(express.static(path.resolve(__dirname, "frontend", "dist")));
 app.use(express.json())
 app.use(cors())

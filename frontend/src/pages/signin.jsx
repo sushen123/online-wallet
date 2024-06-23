@@ -25,7 +25,7 @@ export function Signin() {
             setPassword(e.target.value)
         }} />
         <Button onClick={async() => {
-            const response = await fetch(`${window.location.origin}/api/v1/user/signin`, {
+            const response = await fetch(`http://localhost:3000/api/v1/user/signin`, {
                 method: "POST",
 
                 body: JSON.stringify({

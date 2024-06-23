@@ -2,9 +2,9 @@
 
 
 const mongoose = require('mongoose');
+require('dotenv').config()
 
-
-mongoose.connect('mongodb+srv://sushen:Kuber%401180@cluster0.j6hlfsw.mongodb.net/paytm-wallet')
+mongoose.connect(process.env.MONGO_URL)
 
 const userSchema = new mongoose.Schema({
     firstName: {type: String, required: true, trim: true,  minLength: 3, maxLength: 50},

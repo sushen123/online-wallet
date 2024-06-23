@@ -35,7 +35,7 @@ export function Singup() {
                 setPassword(e.target.value)
             }} label={"Password"} placeholder={"Password"}  />
             <Button onClick={async() => {
-              const response  =  await fetch(`${window.location.origin}/api/v1/user/signup`, {
+              const response  =  await fetch(`http://localhost:3000/api/v1/user/signup`, {
                    method: "POST" ,
                    headers: {
                     'Content-Type': 'application/json'

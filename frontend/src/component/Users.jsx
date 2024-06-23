@@ -8,7 +8,7 @@ export function Users() {
         const navigate = useNavigate();
 
         useEffect(() => {
-             fetch(`${window.location.origin}/api/v1/user/search?filter=` + filter,{
+             fetch(`http://localhost:3000/api/v1/user/search?filter=` + filter,{
                 method: "GET",
                 headers: {
                     'Authorization' : "Bearer " + localStorage.getItem("token")
